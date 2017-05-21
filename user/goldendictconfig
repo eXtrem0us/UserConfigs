@@ -1,11 +1,8 @@
 <config>
  <paths>
-  <path recursive="1">/home/mehdi/Utilities/GoldenResources/Glossaries</path>
+  <path recursive="1"></path>
  </paths>
  <sounddirs>
-  <sounddir icon="" name="Longman Modern English 2005 Updated British (a-z)">/home/mehdi/Utilities/GoldenResources/Longman Modern English 2005 Updated British (a-z)</sounddir>
-  <sounddir icon="" name="Longman Modern English 2005 Updated American (a-z)">/home/mehdi/Utilities/GoldenResources/Longman Modern English 2005 Updated American (a-z)</sounddir>
-  <sounddir icon="" name="Webster Voice Package - English">/home/mehdi/Utilities/GoldenResources/Webster Voice Package - English</sounddir>
  </sounddirs>
  <dictionaryOrder id="0" name="">
   <dictionary name="Longman Modern English 2005 Updated British (a-z)">e123a3fddc97075e70181f1f95cbd6ce</dictionary>
