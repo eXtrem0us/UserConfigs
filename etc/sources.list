@@ -1,0 +1,22 @@
+
+
+# deb cdrom:[Debian GNU/Linux 8.6.0 _jessie_ - Official amd64 NETINST Binary-1 20160917-14:20]/ jessie main
+
+# deb cdrom:[Debian GNU/Linux 8.6.0 _jessie_ - Official amd64 NETINST Binary-1 20160917-14:20]/ jessie main
+
+deb http://ftp.ir.debian.org/debian/ jessie main non-free contrib
+deb-src http://ftp.ir.debian.org/debian/ jessie main non-free contrib
+
+deb http://security.debian.org/ jessie/updates main contrib non-free
+deb-src http://security.debian.org/ jessie/updates main contrib non-free
+
+# jessie-updates, previously known as 'volatile'
+deb http://ftp.ir.debian.org/debian/ jessie-updates main contrib non-free
+deb-src http://ftp.ir.debian.org/debian/ jessie-updates main contrib non-free
+
+# jessie-backports, previously on backports.debian.org
+deb http://ftp.ir.debian.org/debian/ jessie-backports main contrib non-free
+deb-src http://ftp.ir.debian.org/debian/ jessie-backports main contrib non-free
+
+deb [arch=amd64] https://download.docker.com/linux/debian jessie stable
+# deb-src [arch=amd64] https://download.docker.com/linux/debian jessie stable

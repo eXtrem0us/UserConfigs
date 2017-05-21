@@ -1,0 +1,47 @@
+# mirror-dstdomain.conf
+# 
+# network destinations that are allowed by this cache
+
+# the default mirror names on debian are ftp[0-9]*\.[a-z]+\.debian\.org
+# but that would require (slow) regexp matching, so for now we allow
+# www.debian.org and friends here too
+
+.debian.org
+#cdn.debian.net
+.debian.net
+.debian.net
+.asis.io
+ppa.launchpad.net
+.opensuse.org
+.dropbox.com
+.opennebula.org
+mega.nz
+.influxdata.com
+download.skype.com
+repo.skype.com
+.steampowered.com
+.spotify.com
+packages.treasuredata.com
+.deb-multimedia.org
+.digitalocean.com
+.graylog2.org
+.amazonaws.com
+.vestacp.com
+nginx.org
+.i2p2.no
+.winehq.org
+.tuxfamily.org
+.gitlab.com
+.dockerproject.org
+# default mirrors
+#ftp.debian.org 
+#security.debian.org
+.packager.io
+.docker.com
+.ubuntu.com
+.canonical.com
+pkg.jenkins.io
+.windows.net
+
+# additional destinations can be added to the directory:
+#  /etc/squid-deb-proxy/mirror-dstdomain.acl.d

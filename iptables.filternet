@@ -1,0 +1,5 @@
+iptables -A INPUT -s 10.10.34.34 -j DROP
+iptables -A INPUT -s 10.10.34.36 -j DROP
+iptables -A OUTPUT -s 10.10.34.34 -j DROP
+iptables -A OUTPUT -s 10.10.34.36 -j DROP
+
