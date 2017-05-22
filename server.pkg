@@ -11,3 +11,6 @@ unrar
 ssh
 bc
 zsh
+apt-transport-https
+ca-certificates
+proxychains
