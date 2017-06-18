@@ -25,3 +25,4 @@ proxychains
 dconf-editor
 terminator
 screen
+build-essential
