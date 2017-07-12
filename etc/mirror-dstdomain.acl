@@ -42,6 +42,7 @@ nginx.org
 .canonical.com
 pkg.jenkins.io
 .windows.net
+repo.percona.com
 
 # additional destinations can be added to the directory:
 #  /etc/squid-deb-proxy/mirror-dstdomain.acl.d
