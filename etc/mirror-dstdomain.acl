@@ -7,6 +7,11 @@
 # www.debian.org and friends here too
 
 .debian.org
+.centos.org
+.fedoraproject.org
+ftp.jaist.ac.jp
+mirrors.nayatel.com
+.mariadb.org
 #cdn.debian.net
 .debian.net
 .debian.net
@@ -42,7 +47,10 @@ nginx.org
 .canonical.com
 pkg.jenkins.io
 .windows.net
+repo.zabbix.com
 repo.percona.com
+download.gluster.org
+repo.zimbra.com
 
 # additional destinations can be added to the directory:
 #  /etc/squid-deb-proxy/mirror-dstdomain.acl.d
