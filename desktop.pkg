@@ -27,3 +27,4 @@ terminator
 screen
 build-essential
 htop
+command-not-found
