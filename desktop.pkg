@@ -28,3 +28,6 @@ screen
 build-essential
 htop
 command-not-found
+tcpdump
+totem
+mate-menu
