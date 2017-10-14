@@ -19,3 +19,4 @@ build-essential
 htop
 command-not-found
 tcpdump
+net-tools
