@@ -9,11 +9,8 @@
 .debian.org
 .centos.org
 .fedoraproject.org
-ftp.jaist.ac.jp
-mirrors.nayatel.com
 .mariadb.org
 #cdn.debian.net
-.debian.net
 .debian.net
 .asis.io
 ppa.launchpad.net
@@ -26,7 +23,7 @@ download.skype.com
 repo.skype.com
 .steampowered.com
 .spotify.com
-packages.treasuredata.com
+.treasuredata.com
 .deb-multimedia.org
 .digitalocean.com
 .graylog2.org
@@ -50,7 +47,12 @@ pkg.jenkins.io
 repo.zabbix.com
 repo.percona.com
 download.gluster.org
+packages.inverse.ca
 repo.zimbra.com
+mkvtoolnix.download
+.google.com
+.fluentbit.io
+rpms.remirepo.net
 
 # additional destinations can be added to the directory:
 #  /etc/squid-deb-proxy/mirror-dstdomain.acl.d
