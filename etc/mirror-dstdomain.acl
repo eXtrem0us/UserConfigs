@@ -1,17 +1,21 @@
-# mirror-dstdomain.conf
+# /etc/squid-deb-proxy/mirror-dstdomain.acl.d/10-default
 # 
 # network destinations that are allowed by this cache
 
-# the default mirror names on debian are ftp[0-9]*\.[a-z]+\.debian\.org
-# but that would require (slow) regexp matching, so for now we allow
-# www.debian.org and friends here too
+# launchpad personal package archives (disabled by default)
+#ppa.launchpad.net
+#private-ppa.launchpad.net
 
-.debian.org
+# add additional mirror domains here (disabled by default)
+#linux.dropbox.com
+#download.virtualbox.org
+#archive.getdeb.net
+#packages.medibuntu.org
+#dl.google.com
+#repo.steampowered.com
 .centos.org
 .fedoraproject.org
 .mariadb.org
-#cdn.debian.net
-.debian.net
 .asis.io
 ppa.launchpad.net
 .opensuse.org
@@ -35,9 +39,6 @@ nginx.org
 .tuxfamily.org
 .gitlab.com
 .dockerproject.org
-# default mirrors
-#ftp.debian.org 
-#security.debian.org
 .packager.io
 .docker.com
 .ubuntu.com
@@ -53,6 +54,4 @@ mkvtoolnix.download
 .google.com
 .fluentbit.io
 rpms.remirepo.net
-
-# additional destinations can be added to the directory:
-#  /etc/squid-deb-proxy/mirror-dstdomain.acl.d
+.dotdeb.org
