@@ -15,7 +15,6 @@ apt-transport-https
 ca-certificates
 proxychains
 screen
-build-essential
 htop
 command-not-found
 tcpdump

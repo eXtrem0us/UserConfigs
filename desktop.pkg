@@ -26,6 +26,8 @@ dconf-editor
 terminator
 screen
 build-essential
+automake
+autoconf
 htop
 command-not-found
 tcpdump
