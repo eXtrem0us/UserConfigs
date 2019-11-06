@@ -1,0 +1,14 @@
+deb http://ftp.debian.org/debian/ buster main non-free contrib
+# deb-src http://ftp.debian.org/debian/ buster main non-free contrib
+
+deb http://security.debian.org/debian-security buster/updates main contrib non-free
+# deb-src http://security.debian.org/debian-security buster/updates main contrib non-free
+
+# buster-updates, previously known as 'volatile'
+deb http://ftp.debian.org/debian/ buster-updates main contrib non-free
+# deb-src http://ftp.debian.org/debian/ buster-updates main contrib non-free
+
+# buster-backports, previously on backports.debian.org
+deb http://ftp.debian.org/debian/ buster-backports main contrib non-free
+deb http://ftp.debian.org/debian/ buster-proposed-updates main non-free contrib
+# deb-src http://ftp.debian.org/debian/ buster-backports main contrib non-free

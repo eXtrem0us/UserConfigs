@@ -5,7 +5,6 @@ curl
 wget
 bzip2
 xzip
-python-setuptools
 software-properties-common
 unrar
 ssh
@@ -13,7 +12,6 @@ bc
 zsh
 apt-transport-https
 ca-certificates
-proxychains
 screen
 htop
 command-not-found

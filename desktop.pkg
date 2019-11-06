@@ -5,7 +5,6 @@ curl
 wget
 bzip2
 xzip
-python-setuptools
 software-properties-common
 unrar
 ssh
@@ -17,7 +16,6 @@ shotwell
 goldendict
 vlc
 qt4-qtconfig
-cairo-dock
 apt-transport-https
 ca-certificates
 xscreensaver
@@ -38,3 +36,6 @@ net-tools
 gdebi
 mosh
 lsb-core
+compiz
+emerald
+diodon
