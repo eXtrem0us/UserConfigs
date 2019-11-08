@@ -1,3 +1,8 @@
+Acquire::http::Proxy "socks5h://127.0.0.1:1080";
+Acquire::https::Proxy "socks5h://127.0.0.1:1080";
+
 Acquire::http::Proxy::ftp.debian.org "http://192.168.1.90:8000";
 Acquire::https::Proxy::ftp.debian.org "http://192.168.1.90:8000";
+
 Acquire::http::Proxy::dl.google.com DIRECT;
+
