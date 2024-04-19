@@ -202,3 +202,6 @@ Bridge obfs4 192.36.31.80:33194 CD509B41F128A3EA64D0FF161184CA9E55F6B72A cert=Ny
 Bridge obfs4 96.8.122.146:34741 A14AA9980B66415D7AC91FC8B1D34C81BF25F42A cert=4FhMI1ACAHlqvVxcdn0Vr6SP29TahaX2tSx3RC8fj7tYnQOmsQKaKdpVTRzo5A9BgniRWA iat-mode=0
 
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+
+Socks5Proxy 127.0.0.1:20170
+ExitNodes {gb} StrictNodes 1
