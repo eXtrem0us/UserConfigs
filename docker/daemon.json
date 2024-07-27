@@ -1,0 +1,9 @@
+{
+        "registry-mirrors": ["https://docker.arvancloud.ir"],
+        "exec-opts": ["native.cgroupdriver=systemd"],
+        "log-driver": "syslog",
+        "log-opts": {
+            "tag": "{{.Name}}",
+            "syslog-address": "udp://127.0.0.1:514"
+        }
+}
