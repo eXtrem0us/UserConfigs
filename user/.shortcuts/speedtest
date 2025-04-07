@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Install python on termux and then:
+# pip install speedtest-cli --break-system-packages --user --upgrade
+
+speedtest-cli
+sleep 5
+exit
+

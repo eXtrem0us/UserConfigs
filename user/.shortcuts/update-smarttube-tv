@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#Install SmartTubeTV on Android TV
+adb connect 192.168.2.120 && \
+wget -O smarttube.apk https://github.com/yuliskov/SmartTubeNext/releases/download/latest/smarttube_stable.apk && \
+adb install smarttube.apk && \
+rm smarttube.apk
+exit
+

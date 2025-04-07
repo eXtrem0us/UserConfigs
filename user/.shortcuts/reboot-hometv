@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Android TV
+adb connect 192.168.2.120 && adb shell reboot
+exit
+
