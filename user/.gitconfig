@@ -1,0 +1,9 @@
+[diff]
+    external = mcdiff
+
+[merge]
+    external = mcdiff
+
+[pager]
+    diff =
+    merge =
