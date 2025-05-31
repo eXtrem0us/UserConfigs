@@ -1,9 +1,53 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-#Install SmartTubeTV on Android TV
-adb connect 192.168.2.120 && \
-wget -O smarttube.apk https://github.com/yuliskov/SmartTubeNext/releases/download/latest/smarttube_stable.apk && \
-adb install smarttube.apk && \
-rm smarttube.apk
-exit
+# Config
+TV_IP="192.168.2.120"
+PACKAGE_NAME="com.teamsmart.videomanager.tv"  # or adjust if needed
+APK_NAME="smarttube.apk"
 
+# Connect to TV
+adb connect $TV_IP || { echo "Failed to connect to TV at $TV_IP"; exit 1; }
+
+# Get installed version from TV
+TV_VERSION=$(adb shell dumpsys package $PACKAGE_NAME | grep versionName | awk -F'=' '{print $2}' | tr -d '\r\n')
+echo "Installed Version on TV: [$TV_VERSION]"
+
+# Get latest stable release version from GitHub
+LATEST_TAG=$(curl -s "https://api.github.com/repos/yuliskov/SmartTube/releases/latest" | jq -r '.tag_name' | sed -e 's/^v//' -e 's/s$//')
+echo "Latest Version on GitHub: [$LATEST_TAG]"
+
+if [ -z "$LATEST_TAG" ]; then
+  echo "Failed to get the latest release tag from GitHub. Aborting."
+  exit 1
+fi
+
+# Compare versions
+if [ "$TV_VERSION" == "$LATEST_TAG" ]; then
+  echo "SmartTube is up to date. No upgrade needed."
+  exit 0
+fi
+
+echo "Versions differ. Proceeding to upgrade SmartTube..."
+
+# Download latest APK
+#APK_URL="https://github.com/yuliskov/SmartTubeNext/releases/download/v${LATEST_TAG}s/smarttube_stable.apk"
+APK_URL="https://github.com/yuliskov/SmartTubeNext/releases/download/latest/smarttube_stable.apk"
+echo "Downloading APK from: $APK_URL"
+
+wget -O $APK_NAME "$APK_URL" || { echo "Failed to download APK."; exit 1; }
+
+# Check file size
+if [ ! -s $APK_NAME ]; then
+  echo "Downloaded APK is empty. Aborting."
+  rm -f $APK_NAME
+  exit 1
+fi
+
+# Install APK on TV
+adb install -r $APK_NAME && echo "Upgrade completed." || echo "Upgrade failed."
+
+# Cleanup
+rm -f $APK_NAME
+adb disconnect $TV_IP
+
+exit 0
