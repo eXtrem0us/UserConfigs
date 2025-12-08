@@ -1,5 +1,5 @@
 {
-        "registry-mirrors": ["https://docker.arvancloud.ir"],
+        "registry-mirrors": ["https://docker.arvancloud.ir", "https://registry.docker.ir"],
         "exec-opts": ["native.cgroupdriver=systemd"],
         "log-driver": "syslog",
         "log-opts": {
